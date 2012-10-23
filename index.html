@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 (experimental) for Linux https://github.com/w3c/tidy-html5/tree/c63cc39">
+
+  <title></title>
+  <script src="lib/jquery-1.8.2.min.js">
+</script>
+  <script src="lib/leaflet/leaflet.js">
+</script>
+  <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/screen.css">
+  <script src="js/main.js">
+</script>
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <div id="source_map"></div>
+
+  <div id="controls">
+    <div>
+      <select id="place_name">
+        </select> <select id="dig">
+        </select>
+    </div>
+
+    <div>
+      <label for="x_offset">X</label> <input type="range" id="x_offset" name="x_offset" min="0" max="100" value="0">
+      </div>
+    <div>
+      <label for="y_offset">Y</label> <input type="range" id="y_offset" name="y_offset" min="0" may="100" value="0">
+      </div>
+    <div>
+      <label for="width">Width</label> <input type="range" id="width" name="width" min="0" max="100" value="100">
+      </div>
+      <div>
+      <label for="height">Height</label> <input type="range" id="height" name="height" min="0" max="100" value="100">
+    </div>
+  </div>
+</body>
+</html>
