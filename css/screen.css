@@ -1,5 +1,5 @@
 body, html { width: 100%; height: 100%; padding: 0; margin: 0; }
 #base_map { width: 50%; height: 100%; position: absolute; left: 50%; }
-#align { width: 50%; height: 100%; position: absolute; left: 0; }
-#align_map { width: 100%; position: absolute; top: 30px; bottom: 0; }
-#align .controls { width: 100%; position: absolute; top: 0; bottom: 30px; }
+#source { width: 50%; height: 100%; position: absolute; left: 0; }
+#source_map { width: 100%; position: absolute; left: 0; right: 0; top: 50px; bottom: 0; }
+#source .controls { width: 100%; position: absolute; top: 0; bottom: 50px; }
