@@ -10,36 +10,28 @@
 </script>
   <script src="lib/leaflet/leaflet.js">
 </script>
+  <script src="lib/openlayers/OpenLayers.js">
+</script>
   <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+  <link rel="stylesheet" href="lib/openlayers/theme/default/style.css">
   <link rel="stylesheet" href="css/screen.css">
   <script src="js/main.js">
 </script>
 </head>
 
 <body>
-  <div id="map"></div>
+  <div id="base_map"></div>
 
-  <div id="source_map"></div>
-
-  <div id="controls">
-    <div>
-      <select id="place_name">
+  <div id="align">
+    <div id="align_controls">
+      <select id="location">
         </select> <select id="dig">
         </select>
+	<input type="radio" name="type" value="none" id="noneToggle" checked="checked" />
+        <label for="noneToggle">navigate</label>
     </div>
 
-    <div>
-      <label for="x_offset">X</label> <input type="range" id="x_offset" name="x_offset" min="0" max="100" value="25">
-      </div>
-    <div>
-      <label for="y_offset">Y</label> <input type="range" id="y_offset" name="y_offset" min="0" may="100" value="25">
-      </div>
-    <div>
-      <label for="width">Width</label> <input type="range" id="width" name="width" min="0" max="100" value="50">
-      </div>
-      <div>
-      <label for="height">Height</label> <input type="range" id="height" name="height" min="0" max="100" value="50">
-    </div>
+    <div id="align_map"></div>
   </div>
 </body>
 </html>

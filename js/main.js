@@ -1,87 +1,90 @@
 viewer = (function() {
-  var map, places, place_name_sel, dig_sel, map_img;
+  var self = {};
 
-  function _resize() {
-    var x = $('#x_offset').attr('value');
-    var y = $('#y_offset').attr('value');
-    var w = $('#width').attr('value');
-    var h = $('#height').attr('value');
-    map_img.css('width', w + '%');
-    map_img.css('height', h + '%');
-    map_img.css('left', $('#map').width() * x / 100);
-    map_img.css('top', $('#map').height() * y / 100);
-  }
+  self._dig_change = function() {
+    var idx, resource;
 
-  function _selected_place() {
-    var current_place = places[$('#place_name :selected').attr('value')];
-    if(current_place.latlng && current_place.latlng[0]) {
-      map.setView(current_place.latlng, 13);
-    }
-
-    // populate digs
-    dig_sel.html('');
-    for(var name in current_place.digs) {
-      var opt = $('<option>');
-      opt.attr('value', name);
-      opt.text(name);
-      dig_sel.append(opt);
-    }
-    dig_sel.change();
-  }
-
-  function _selected_dig() {
-    var current_place = places[$('#place_name :selected').attr('value')];
-    var current_dig = current_place.digs[$('#dig :selected').attr('value')];
-
-    for(var i in current_dig) {
-      var resource = current_dig[i];
-      if(resource.description.match(/Map/)) {
-        var sm = $('#source_map');
-        sm.html('');
-
-        map_img = $('<img>');
-        map_img.attr('src', 'cache/' + resource.href);
-        sm.append(map_img);
-        _resize();
+    self._current_dig = self._current_place.digs[self._dig_sel.children(':selected').val()];
+    for(idx in self._current_dig) {
+      resource = self._current_dig[idx];
+      if(/[Mm]ap/.test(resource.description)) {
+        self.align_map.removeLayer(self._align_layer);
+        self._align_layer = new OpenLayers.Layer.Image(
+          resource.description, 'cache/' + resource.href,
+          new OpenLayers.Bounds(-resource.size[0], -resource.size[1], 2*resource.size[0], 2*resource.size[1]),
+          new OpenLayers.Size(0.5*resource.size[0], 0.5*resource.size[1]),
+          {numZoomLevels: 3});
+        self.align_map.addLayer(self._align_layer);
+        self.align_map.setCenter([0.5*resource.size[0], 0.5*resource.size[1]], 0);
       }
     }
   }
 
-  function _got_places() {
-    // populate place selector
-    place_name_sel.html('');
-    for(var i in places) {
-      place = places[i];
-      opt = $('<option>');
-      opt.attr('value', i);
-      opt.text(place.name + ', ' + place.county);
-      place_name_sel.append(opt);
+  self._location_change = function() {
+    var key, opt;
+
+    self._current_place = self._places[self._location_sel.children(':selected').val()];
+
+    // populate digs
+    self._dig_sel.html('');
+    for(var key in self._current_place.digs) {
+      opt = $('<option>').attr('value', key).text(key);
+      self._dig_sel.append(opt);
     }
-    place_name_sel.change();
+    self._dig_sel.change();
+
+    center = new OpenLayers.LonLat(self._current_place.latlng[1], self._current_place.latlng[0]);
+    center.transform(new OpenLayers.Projection('EPSG:4326'), self.base_map.getProjectionObject());
+    self.base_map.setCenter(center, 13);
   }
 
-  this.go = function() {
-    map = L.map('map').setView([51.505, -0.09], 13);
-    place_name_sel = $('#place_name');
-    dig_sel = $('#dig');
+  self._load_places = function(data) {
+    var place, opt, i;
+    var center;
+    self._places = data;
 
-    L.tileLayer('http://otile1.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
-      attribution: 'MapQuest',
-    }).addTo(map);
-
-    place_name_sel.change(_selected_place);
-    dig_sel.change(_selected_dig);
-
-    $.getJSON('output/places.json', function(data) { places = data; _got_places(); });
-
-    $('#x_offset').change(_resize);
-    $('#y_offset').change(_resize);
-    $('#width').change(_resize);
-    $('#height').change(_resize);
+    // populate locations
+    self._location_sel.html('');
+    for(i in self._places) {
+      place = self._places[i];
+      opt = $('<option>').attr('value', i).text(place.name + ', ' + place.county);
+      self._location_sel.append(opt);
+    }
+    self._location_sel.change();
   }
 
-  return this;
-}).call();
+  self.go = function() {
+    self._location_sel = $('#location');
+    self._location_sel.change(self._location_change);
+
+    self._dig_sel = $('#dig');
+    self._dig_sel.change(self._dig_change);
+
+    self._osm_layer = new OpenLayers.Layer.OSM('Base');
+    self._align_layer = new OpenLayers.Layer.Image(
+        'To align', 'placeholder.jpg',
+        new OpenLayers.Bounds(-180, -88.759, 180, 88.759),
+        new OpenLayers.Size(580, 288),
+        {numZoomLevels: 3}
+    );
+    
+    self._align_vectors = new OpenLayers.Layer.Vector('Vector Layer');
+
+    self.base_map = new OpenLayers.Map('base_map', {
+      layers: [ self._osm_layer, ],
+    });
+    self.base_map.zoomToMaxExtent();
+
+    self.align_map = new OpenLayers.Map('align_map', {
+      layers: [ self._align_layer, self._align_vectors, ],
+    });
+    self.align_map.zoomToMaxExtent();
+
+    $.getJSON('output/places.json', self._load_places);
+  }
+
+  return self;
+})();
 
 $(document).ready(viewer.go);
 
