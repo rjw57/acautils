@@ -49,7 +49,7 @@ viewer = (function() {
   ]);
   self._aerial_layer = new OpenLayers.Layer.Bing({
     name: 'Aerial', type: 'AerialWithLabels', culture: 'en-GB',
-    key: 'TO-BE-REPLACED',
+    key: 'AvsuiJVtmn-zxz7hjF_DnAI7PGecNnzJFsNi7V69yd0BUdWYNlyetZblBtnRUcEI',
   });
 
   self._source_layer = null;
@@ -215,7 +215,7 @@ viewer = (function() {
         self._osm_layer,
         self._map_quest_layer,
         self._map_quest_layer,
-        // self._aerial_layer,
+        self._aerial_layer,
         self._base_vectors
       ],
     });
