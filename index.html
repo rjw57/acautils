@@ -31,22 +31,31 @@
   <div id="base_map"></div>
 
   <div id="source">
-    <div id="source_map"></div>
+    <table id="source_table">
+      <tr>
+        <td>
+          <div id="source_controls">
+            <select id="location">
+              </select> <select id="dig">
+              </select> <button id="save">Save CSV</button>
+          </div>
 
-    <div id="source_controls">
-      <select id="location">
-        </select> <select id="dig">
-</select>
-	<button id="save">Save CSV</button>
-    </div>
+          <div>
+            <input type="radio" name="type" value="none" id="noneToggle" checked="checked"> <label for=
+            "noneToggle">navigate</label> <input type="radio" name="type" value="none" id="correspondenceToggle">
+            <label for="correspondenceToggle">add correspondence</label> <input type="radio" name="type" value="none"
+            id="testPitToggle"> <label for="testPitToggle">add test pit</label> <input type="radio" name="type" value=
+            "none" id="dragToggle"> <label for="dragToggle">move</label>
+          </div>
+        </td>
+      </tr>
 
-    <div>
-      <input type="radio" name="type" value="none" id="noneToggle" checked="checked"> <label for=
-      "noneToggle">navigate</label> <input type="radio" name="type" value="none" id="correspondenceToggle"> <label for=
-      "correspondenceToggle">add correspondence</label> <input type="radio" name="type" value="none" id=
-      "testPitToggle"> <label for="testPitToggle">add test pit</label> <input type="radio" name="type" value="none" id=
-      "dragToggle"> <label for="dragToggle">move</label>
-    </div>
+      <tr>
+        <td height="100%">
+          <div id="source_map"></div>
+        </td>
+      </tr>
+    </table>
   </div>
 </body>
 </html>
