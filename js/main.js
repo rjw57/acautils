@@ -130,6 +130,7 @@ viewer = (function() {
   self._dig_change = function() {
     var idx, resource;
 
+    self._current_dig_name = self._dig_sel.children(':selected').text();
     self._current_dig = self._current_place.digs[self._dig_sel.children(':selected').val()];
     for(idx in self._current_dig) {
       resource = self._current_dig[idx];
@@ -199,7 +200,14 @@ viewer = (function() {
     self.base_map.zoomToMaxExtent();
     self.source_map = new OpenLayers.Map('source_map', { layers: [ self._source_vectors, ], });
 
-    $('#save').click(function() { self._save_as(self._current_place.name.toLowerCase().replace(/[^a-z0-9]/, '_') + '.csv'); });
+    $('#save').click(function() {
+      var file_root = [
+        self._current_place.name,
+        self._current_place.county,
+        self._current_dig_name,
+      ].join('_');
+      self._save_as(file_root.toLowerCase().replace(/[^a-z0-9]/, '_') + '.csv');
+    });
   }
 
   self._source_correspondences = function() {
@@ -235,7 +243,7 @@ viewer = (function() {
 
     var row = function(lng, lat, label, type) {
       return [
-        '"' + self._dig_sel.children(':selected').text() + '"',
+        '"' + self._current_dig_name + '"',
         '"' + self._current_place.name + '"',
         '"' + self._current_place.county + '"',
         '"' + label + '"',
