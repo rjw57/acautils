@@ -198,6 +198,8 @@ viewer = (function() {
     self.base_map = new OpenLayers.Map('base_map', { layers: [ self._osm_layer, self._base_vectors ], });
     self.base_map.zoomToMaxExtent();
     self.source_map = new OpenLayers.Map('source_map', { layers: [ self._source_vectors, ], });
+
+    $('#save').click(function() { self._save_as(self._current_place.name.toLowerCase().replace(/[^a-z0-9]/, '_') + '.csv'); });
   }
 
   self._source_correspondences = function() {
@@ -223,6 +225,46 @@ viewer = (function() {
     }
     return out;
   }
+
+  self._save_as = function(filename) {
+    var csv = [ 'Dig, Place, County, Label, Type, Latitude, Longitude', ];
+    var pits = self._source_test_pits();
+    var corrs = self._source_correspondences();
+    var proj = new OpenLayers.Projection("EPSG:4326");
+    var idx, f, g;
+
+    var row = function(lng, lat, label, type) {
+      return [
+        '"' + self._dig_sel.children(':selected').text() + '"',
+        '"' + self._current_place.name + '"',
+        '"' + self._current_place.county + '"',
+        '"' + label + '"',
+        '"' + type + '"',
+        lat, lng,
+      ].join(',');
+    }
+
+    for(idx in pits) {
+      f = pits[idx].attributes.other;
+      g = f.geometry.clone();
+      g.transform(self.base_map.getProjectionObject(), proj);
+      csv.push(row(g.x, g.y, f.attributes.label, 'PIT'));
+    }
+
+    for(idx in corrs) {
+      f = corrs[idx].attributes.other;
+      g = f.geometry.clone();
+      g.transform(self.base_map.getProjectionObject(), proj);
+      csv.push(row(g.x, g.y, f.attributes.label, 'COR'));
+    }
+
+    csv = csv.join("\n");
+    
+    var bb = new BlobBuilder;
+    bb.append(csv);
+    var blob = bb.getBlob("text/csv;charset=" + document.characterSet);
+    saveAs(blob, filename);
+  };
 
   self.go = function() {
     self._setup();
