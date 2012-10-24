@@ -139,7 +139,7 @@ viewer = (function() {
           self.source_map.removeLayer(self._source_layer);
         }
         self._source_layer = new OpenLayers.Layer.Image(
-          resource.description, 'cache/' + resource.href,
+          resource.description, 'http://www.arch.cam.ac.uk/aca/' + resource.href,
           new OpenLayers.Bounds(0, 0, w, h),
           new OpenLayers.Size(w, h),
           {
