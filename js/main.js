@@ -40,10 +40,24 @@ viewer = (function() {
 
   style.addRules([rule_corr, rule_test_pit]);
   
-  self._osm_layer = new OpenLayers.Layer.OSM('Base');
+  self._osm_layer = new OpenLayers.Layer.OSM('OpenStreetMap');
+  self._map_quest_layer = new OpenLayers.Layer.OSM('MapQuest', [
+      "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.jpg",
+      "http://otile2.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.jpg",
+      "http://otile3.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.jpg",
+      "http://otile4.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.jpg",
+  ]);
+  self._aerial_layer = new OpenLayers.Layer.Bing({
+    name: 'Aerial', type: 'AerialWithLabels', culture: 'en-GB',
+    key: 'TO-BE-REPLACED',
+  });
+
   self._source_layer = null;
   self._source_vectors = new OpenLayers.Layer.Vector('Vector Layer', { styleMap: new OpenLayers.StyleMap(style) });
-  self._base_vectors = new OpenLayers.Layer.Vector('Vector Layer', { styleMap: new OpenLayers.StyleMap(style) });
+  self._base_vectors = new OpenLayers.Layer.Vector('Vector Layer', {
+    styleMap: new OpenLayers.StyleMap(style),
+    displayInLayerSwitcher: false,
+  });
 
   self._set_transform = function(t) {
     self._transform = t;
@@ -196,8 +210,20 @@ viewer = (function() {
     self._location_sel.change(self._location_change);
     self._dig_sel.change(self._dig_change);
 
-    self.base_map = new OpenLayers.Map('base_map', { layers: [ self._osm_layer, self._base_vectors ], });
+    self.base_map = new OpenLayers.Map('base_map', {
+      layers: [
+        self._osm_layer,
+        self._map_quest_layer,
+        self._map_quest_layer,
+        // self._aerial_layer,
+        self._base_vectors
+      ],
+    });
     self.base_map.zoomToMaxExtent();
+
+    self._base_layer_switcher = new OpenLayers.Control.LayerSwitcher({ autoActivate: true });
+    self.base_map.addControl(self._base_layer_switcher);
+
     self.source_map = new OpenLayers.Map('source_map', { layers: [ self._source_vectors, ], });
 
     $('#save').click(function() {
