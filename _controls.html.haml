@@ -1,0 +1,47 @@
+%table{ width: '100%' }
+  %tr
+    %td{ width: '33%' }
+      %input.input-xlarge#placename.geo-search.search-query{ type: 'text', placeholder: 'Place name' } 
+      %button.btn#search-submit Go
+      %button.btn#search-clear Clear
+    %td{ align: 'center', width: '34%' }
+      .btn-group#tools{ data: { toggle: 'buttons-radio' } }
+        %button#move.btn.active Move
+        %button#add-correspondence.btn New Correspondence
+        %button#add-poi.btn New Point of Interest
+    %td{ align: 'right', width: '33%' }
+      %button.btn#reset Reset to current view
+      %button.btn Save CSV
+      %a.btn{ href: '#change-source-dialog', data: { toggle: 'modal' } } Change source
+
+#change-source-dialog.modal.hide.fade
+  .modal-header
+    %button.close{ type: 'button', data: { dismiss: 'modal' }, role: 'dialog' } &times;
+    <h3>Select a new source image</h3>
+  .modal-body
+    .alert.alert-error
+      %strong Careful!
+      This deletes any points you've added to the map.
+
+    .row-fluid
+      %table.span10.offset1
+        %tr
+          %td.source-radio
+            %input{ type: 'radio', name: 'source', value: 'url', checked: 'checked', id: 'source-image' }
+          %td.source-controls
+            %label{ for: 'source-image' } Enter an image URL
+            %input#source-image-url.span12{ type: 'text', placeholder: 'http://example.com/image.jpg' }
+        %tr
+          %td
+          %td.source-separator
+            %strong or
+        %tr
+          %td.source-radio
+            %input{ type: 'radio', name: 'source', value: 'dig', id: 'source-aca-dig' }
+          %td.source-controls
+            %label{ for: 'source-aca-dig' } Choose an ACA dig
+            %select.span7{ name: 'aca-place' }
+            %select.span5{ name: 'aca-dig' }
+  .modal-footer
+    %a.btn{ data: { dismiss: 'modal' } } Cancel
+    %a#change-source.btn.btn-danger{ data: { dismiss: 'modal' } } Change source image
