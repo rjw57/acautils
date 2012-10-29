@@ -1,0 +1,300 @@
+INFO:Starting processing reports.
+INFO:Processing: cache/docs/PotReportManuden11.doc
+INFO:Loading report from cache/docs/PotReportManuden11.doc
+INFO:Processing: cache/docs/PotReportSharnbrook11.doc
+INFO:Loading report from cache/docs/PotReportSharnbrook11.doc
+INFO:Processing: cache/docs/PotReportClare11.doc
+INFO:Loading report from cache/docs/PotReportClare11.doc
+INFO:Processing: cache/docs/PotReportCoddenham11.doc
+INFO:Loading report from cache/docs/PotReportCoddenham11.doc
+INFO:Processing: cache/docs/PotReportCottenham11.doc
+INFO:Loading report from cache/docs/PotReportCottenham11.doc
+INFO:Processing: cache/docs/PotReportHessett06.doc
+INFO:Loading report from cache/docs/PotReportHessett06.doc
+INFO:Processing: cache/docs/PotReportHindringham07.doc
+INFO:Loading report from cache/docs/PotReportHindringham07.doc
+INFO:Processing: cache/docs/PotReportGarboldisham11.doc
+INFO:Loading report from cache/docs/PotReportGarboldisham11.doc
+INFO:Processing: cache/docs/PotReportHessett08.doc
+INFO:Loading report from cache/docs/PotReportHessett08.doc
+INFO:Processing: cache/docs/PotReportUfford06.doc
+INFO:Loading report from cache/docs/PotReportUfford06.doc
+INFO:Processing: cache/docs/PotReportBuresCommon12TPs.doc
+INFO:Loading report from cache/docs/PotReportBuresCommon12TPs.doc
+INFO:Processing: cache/docs/PotReportSharnbrook08.doc
+INFO:Loading report from cache/docs/PotReportSharnbrook08.doc
+INFO:Processing: cache/docs/PotReportHoughtonAndWyton05.doc
+INFO:Loading report from cache/docs/PotReportHoughtonAndWyton05.doc
+INFO:Processing: cache/docs/PotReportBinham12-2.doc
+INFO:Loading report from cache/docs/PotReportBinham12-2.doc
+ERROR:Unparsable date range: 1000-BC-50AD
+ERROR:Unparsable date range: 1000-BC-50AD
+INFO:Processing: cache/docs/PotReportWiveton06.doc
+INFO:Loading report from cache/docs/PotReportWiveton06.doc
+INFO:Processing: cache/docs/PotReportWestMersea10.doc
+INFO:Loading report from cache/docs/PotReportWestMersea10.doc
+INFO:Processing: cache/docs/PotReportIpswich11.doc
+INFO:Loading report from cache/docs/PotReportIpswich11.doc
+INFO:Processing: cache/docs/PotReportWestMersea08.doc
+INFO:Loading report from cache/docs/PotReportWestMersea08.doc
+INFO:Processing: cache/docs/PotReportAcle10.doc
+INFO:Loading report from cache/docs/PotReportAcle10.doc
+INFO:Processing: cache/docs/PotReportCoddenham10.doc
+INFO:Loading report from cache/docs/PotReportCoddenham10.doc
+INFO:Processing: cache/docs/PotReportPaston12.doc
+INFO:Loading report from cache/docs/PotReportPaston12.doc
+WARNING:Working around bad date: "1900."
+INFO:Processing: cache/docs/PotReportTerringtonStClement09.doc
+INFO:Loading report from cache/docs/PotReportTerringtonStClement09.doc
+INFO:Processing: cache/docs/PotReportWestMersea06.doc
+INFO:Loading report from cache/docs/PotReportWestMersea06.doc
+INFO:Processing: cache/docs/PotReportChediston06.doc
+INFO:Loading report from cache/docs/PotReportChediston06.doc
+INFO:Processing: cache/docs/PotReportGaywood10.doc
+INFO:Loading report from cache/docs/PotReportGaywood10.doc
+WARNING:Working around bad date: "1900`"
+INFO:Processing: cache/docs/PotReportHessett07.doc
+INFO:Loading report from cache/docs/PotReportHessett07.doc
+INFO:Processing: cache/docs/PotReportCastleton08.doc
+INFO:Loading report from cache/docs/PotReportCastleton08.doc
+INFO:Processing: cache/docs/PotReportClavering12.doc
+INFO:Loading report from cache/docs/PotReportClavering12.doc
+INFO:Processing: cache/docs/PotReportCarletonRode10-2.doc
+INFO:Loading report from cache/docs/PotReportCarletonRode10-2.doc
+INFO:Processing: cache/docs/PotReportCoddenham08.doc
+INFO:Loading report from cache/docs/PotReportCoddenham08.doc
+INFO:Processing: cache/docs/PotReportChediston11.doc
+INFO:Loading report from cache/docs/PotReportChediston11.doc
+INFO:Processing: cache/docs/PotReportCarletonRode08.doc
+INFO:Loading report from cache/docs/PotReportCarletonRode08.doc
+INFO:Processing: cache/docs/PotReportClare11-2.doc
+INFO:Loading report from cache/docs/PotReportClare11-2.doc
+INFO:Processing: cache/docs/PotReportWestMersea07.doc
+INFO:Loading report from cache/docs/PotReportWestMersea07.doc
+INFO:Processing: cache/docs/PotReportSmarden08.doc
+INFO:Loading report from cache/docs/PotReportSmarden08.doc
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "2").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+INFO:Processing: cache/docs/PotReportSharnbrook10-1.doc
+INFO:Loading report from cache/docs/PotReportSharnbrook10-1.doc
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+INFO:Processing: cache/docs/PotReportGreatShelford10.doc
+INFO:Loading report from cache/docs/PotReportGreatShelford10.doc
+INFO:Processing: cache/docs/PotReportWisbechStMary07.doc
+INFO:Loading report from cache/docs/PotReportWisbechStMary07.doc
+ERROR:Unparsable date range: 
+ERROR:Unparsable date range: 
+ERROR:Unparsable date range: 
+INFO:Processing: cache/docs/PotReportUfford05.doc
+INFO:Loading report from cache/docs/PotReportUfford05.doc
+INFO:Processing: cache/docs/PotReportAcle09.doc
+INFO:Loading report from cache/docs/PotReportAcle09.doc
+INFO:Processing: cache/docs/PotReportChediston10.doc
+INFO:Loading report from cache/docs/PotReportChediston10.doc
+INFO:Processing: cache/docs/PotReportWiveton08.doc
+INFO:Loading report from cache/docs/PotReportWiveton08.doc
+INFO:Processing: cache/docs/PotReportBinham10.doc
+INFO:Loading report from cache/docs/PotReportBinham10.doc
+INFO:Processing: cache/docs/PotReportThorney07.doc
+INFO:Loading report from cache/docs/PotReportThorney07.doc
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+INFO:Processing: cache/docs/PotReportBinham09.doc
+INFO:Loading report from cache/docs/PotReportBinham09.doc
+INFO:Processing: cache/docs/PotReportCarletonRode11.doc
+INFO:Loading report from cache/docs/PotReportCarletonRode11.doc
+INFO:Processing: cache/docs/PotReportGirton09.doc
+INFO:Loading report from cache/docs/PotReportGirton09.doc
+INFO:Processing: cache/docs/PotReportTerringtonStClement05.doc
+INFO:Loading report from cache/docs/PotReportTerringtonStClement05.doc
+WARNING:Skipping table since heading 2 is not "No" (= "Wt").
+INFO:Processing: cache/docs/PotReportWrittle12.doc
+INFO:Loading report from cache/docs/PotReportWrittle12.doc
+INFO:Processing: cache/docs/PotReportSharnbrook09.doc
+INFO:Loading report from cache/docs/PotReportSharnbrook09.doc
+INFO:Processing: cache/docs/PotReportIsleham11.doc
+INFO:Loading report from cache/docs/PotReportIsleham11.doc
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Cntxt").
+INFO:Processing: cache/docs/PotReportCoddenham07.doc
+INFO:Loading report from cache/docs/PotReportCoddenham07.doc
+INFO:Processing: cache/docs/PotReportCottenham09-1.doc
+INFO:Loading report from cache/docs/PotReportCottenham09-1.doc
+WARNING:Skipping table because length of headings doesn't match types.
+WARNING:Headings: TP, Context, No, Wt, No, Wt, No, Wt, Date
+WARNING:Types: EMW, ES, VIC, Date
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Context").
+INFO:Processing: cache/docs/PotReportBinham11.doc
+INFO:Loading report from cache/docs/PotReportBinham11.doc
+INFO:Processing: cache/docs/PotReportGreatShelford06.doc
+INFO:Loading report from cache/docs/PotReportGreatShelford06.doc
+ERROR:Unparsable date range: -
+ERROR:Unparsable date range: -
+ERROR:Unparsable date range: 
+ERROR:Unparsable date range: -
+ERROR:Unparsable date range: -
+INFO:Processing: cache/docs/PotReportSwaffhamBulbeck12.doc
+INFO:Loading report from cache/docs/PotReportSwaffhamBulbeck12.doc
+INFO:Processing: cache/docs/PotReportLittleHallingbury10.doc
+INFO:Loading report from cache/docs/PotReportLittleHallingbury10.doc
+INFO:Processing: cache/docs/PotReportMountBures11.doc
+INFO:Loading report from cache/docs/PotReportMountBures11.doc
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Tr").
+INFO:Processing: cache/docs/PotReportLongMelford11-1.doc
+INFO:Loading report from cache/docs/PotReportLongMelford11-1.doc
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Black-slipped ware").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "Beaker").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+INFO:Processing: cache/docs/PotReportCarletonRode09.doc
+INFO:Loading report from cache/docs/PotReportCarletonRode09.doc
+INFO:Processing: cache/docs/PotReportTerringtonStClement06.doc
+INFO:Loading report from cache/docs/PotReportTerringtonStClement06.doc
+INFO:Processing: cache/docs/PotReportSharnbrook12.doc
+INFO:Loading report from cache/docs/PotReportSharnbrook12.doc
+INFO:Processing: cache/docs/PotReportCoddenham09.doc
+INFO:Loading report from cache/docs/PotReportCoddenham09.doc
+INFO:Processing: cache/docs/PotReportCastor10.doc
+INFO:Loading report from cache/docs/PotReportCastor10.doc
+INFO:Processing: cache/docs/PotReportLittleHallingbury07.doc
+INFO:Loading report from cache/docs/PotReportLittleHallingbury07.doc
+ERROR:Unparsable date range: ?1500BC
+INFO:Processing: cache/docs/PotReportCarletonRode10-1.doc
+INFO:Loading report from cache/docs/PotReportCarletonRode10-1.doc
+INFO:Processing: cache/docs/PotReportWestMersea09.doc
+INFO:Loading report from cache/docs/PotReportWestMersea09.doc
+ERROR:Unparsable date range: AD50-400
+INFO:Processing: cache/docs/PotReportChediston07.doc
+INFO:Loading report from cache/docs/PotReportChediston07.doc
+INFO:Processing: cache/docs/PotReportHoughtonAndWyton08-1.doc
+INFO:Loading report from cache/docs/PotReportHoughtonAndWyton08-1.doc
+INFO:Processing: cache/docs/PotReportCarletonRode07.doc
+INFO:Loading report from cache/docs/PotReportCarletonRode07.doc
+INFO:Processing: cache/docs/PotReportBramford12.doc
+INFO:Loading report from cache/docs/PotReportBramford12.doc
+INFO:Processing: cache/docs/PotReportRamsey09.doc
+INFO:Loading report from cache/docs/PotReportRamsey09.doc
+INFO:Processing: cache/docs/PotReportLittleHallingbury08.doc
+INFO:Loading report from cache/docs/PotReportLittleHallingbury08.doc
+INFO:Processing: cache/docs/PotReportShefford12.doc
+INFO:Loading report from cache/docs/PotReportShefford12.doc
+INFO:Processing: cache/docs/PotReportChediston08.doc
+INFO:Loading report from cache/docs/PotReportChediston08.doc
+INFO:Processing: cache/docs/PotReportLittleHallingbury09.doc
+INFO:Loading report from cache/docs/PotReportLittleHallingbury09.doc
+INFO:Processing: cache/docs/PotReportWisbechStMary06.doc
+INFO:Loading report from cache/docs/PotReportWisbechStMary06.doc
+ERROR:Unparsable date range: 400BC-AD200
+ERROR:Unparsable date range: 400BC-AD400
+INFO:Processing: cache/docs/PotReportThorney10.doc
+INFO:Loading report from cache/docs/PotReportThorney10.doc
+WARNING:Skipping table since second heading is not "Cntxt" or "Context" or "Spit" or "Cntx" (= "Text").
+WARNING:Skipping table since second heading is not "Cntxt" or "Context" or "Spit" or "Cntx" (= "Text").
+WARNING:Skipping table since second heading is not "Cntxt" or "Context" or "Spit" or "Cntx" (= "Text").
+WARNING:Skipping table since second heading is not "Cntxt" or "Context" or "Spit" or "Cntx" (= "Text").
+WARNING:Skipping table since second heading is not "Cntxt" or "Context" or "Spit" or "Cntx" (= "Text").
+WARNING:Skipping table since second heading is not "Cntxt" or "Context" or "Spit" or "Cntx" (= "Text").
+WARNING:Skipping table since second heading is not "Cntxt" or "Context" or "Spit" or "Cntx" (= "Text").
+WARNING:Skipping table since second heading is not "Cntxt" or "Context" or "Spit" or "Cntx" (= "Text").
+WARNING:Skipping table since second heading is not "Cntxt" or "Context" or "Spit" or "Cntx" (= "Text").
+WARNING:Skipping table since second heading is not "Cntxt" or "Context" or "Spit" or "Cntx" (= "Text").
+WARNING:Skipping table since second heading is not "Cntxt" or "Context" or "Spit" or "Cntx" (= "Text").
+INFO:Processing: cache/docs/PotReportGreatShelford08.doc
+INFO:Loading report from cache/docs/PotReportGreatShelford08.doc
+INFO:Processing: cache/docs/PotReportWrittle11.doc
+INFO:Loading report from cache/docs/PotReportWrittle11.doc
+INFO:Processing: cache/docs/PotReportKibworth09.doc
+INFO:Loading report from cache/docs/PotReportKibworth09.doc
+INFO:Processing: cache/docs/PotReportCastor11.doc
+INFO:Loading report from cache/docs/PotReportCastor11.doc
+INFO:Processing: cache/docs/PotReportPotton12.doc
+INFO:Loading report from cache/docs/PotReportPotton12.doc
+INFO:Processing: cache/docs/PotReportCottenham10.doc
+INFO:Loading report from cache/docs/PotReportCottenham10.doc
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "BCHIN").
+INFO:Processing: cache/docs/PotReportSharnbrook07.doc
+INFO:Loading report from cache/docs/PotReportSharnbrook07.doc
+INFO:Processing: cache/docs/PotReportThorrington07.doc
+INFO:Loading report from cache/docs/PotReportThorrington07.doc
+ERROR:Unparsable date range: AD100-1900
+ERROR:Unparsable date range: AD100-1900
+INFO:Processing: cache/docs/PotReportPeakirk12-2.doc
+INFO:Loading report from cache/docs/PotReportPeakirk12-2.doc
+INFO:Processing: cache/docs/PotReportThorrington06.doc
+INFO:Loading report from cache/docs/PotReportThorrington06.doc
+INFO:Processing: cache/docs/PotReportWillingham09.doc
+INFO:Loading report from cache/docs/PotReportWillingham09.doc
+ERROR:Unparsable date range: 500BC-AD200
+INFO:Processing: cache/docs/PotReportGarboldisham12.doc
+INFO:Loading report from cache/docs/PotReportGarboldisham12.doc
+INFO:Processing: cache/docs/PotReportSharrnbrook11-2.doc
+INFO:Loading report from cache/docs/PotReportSharrnbrook11-2.doc
+INFO:Processing: cache/docs/PotReportCastor09.doc
+INFO:Loading report from cache/docs/PotReportCastor09.doc
+INFO:Processing: cache/docs/PotReportWrittle10.doc
+INFO:Loading report from cache/docs/PotReportWrittle10.doc
+INFO:Processing: cache/docs/PotReportRougham10.doc
+INFO:Loading report from cache/docs/PotReportRougham10.doc
+INFO:Processing: cache/docs/PotReportAcle11.doc
+INFO:Loading report from cache/docs/PotReportAcle11.doc
+INFO:Processing: cache/docs/PotReportBinham12-1.doc
+INFO:Loading report from cache/docs/PotReportBinham12-1.doc
+INFO:Processing: cache/docs/PotReportCastleton09.doc
+INFO:Loading report from cache/docs/PotReportCastleton09.doc
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "1").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "2").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "3").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "4").
+WARNING:Skipping table since first heading is not "TP" or "Test Pit" (= "BS").
+INFO:Processing: cache/docs/PotReportGreatShelford11.doc
+INFO:Loading report from cache/docs/PotReportGreatShelford11.doc
+INFO:Processing: cache/docs/PotReportSharnbrook10-2.doc
+INFO:Loading report from cache/docs/PotReportSharnbrook10-2.doc
+INFO:Processing: cache/docs/PotReportHessett09.doc
+INFO:Loading report from cache/docs/PotReportHessett09.doc
+INFO:Processing: cache/docs/PotReportCoddenham06.doc
+INFO:Loading report from cache/docs/PotReportCoddenham06.doc
+INFO:Processing: cache/docs/PotReportPeakirk12-1.doc
+INFO:Loading report from cache/docs/PotReportPeakirk12-1.doc
+INFO:Processing: cache/docs/PotReportGirton10.doc
+INFO:Loading report from cache/docs/PotReportGirton10.doc
+INFO:Processing: cache/docs/PotReportGaywood11-1.doc
+INFO:Loading report from cache/docs/PotReportGaywood11-1.doc
+INFO:Processing: cache/docs/PotReportGreatShelford07.doc
+INFO:Loading report from cache/docs/PotReportGreatShelford07.doc
+WARNING:Skipping table since second heading is not "Cntxt" or "Context" or "Spit" or "Cntx" (= "Ctxt").
+INFO:Processing: cache/docs/PotReportHoughtonAndWyton06.doc
+INFO:Loading report from cache/docs/PotReportHoughtonAndWyton06.doc
+ERROR:Unparsable date range: 
+INFO:Processing: cache/docs/WRI09-Pot-Report.doc
+INFO:Loading report from cache/docs/WRI09-Pot-Report.doc
+INFO:Processing: cache/docs/PotReportThorney06.doc
+INFO:Loading report from cache/docs/PotReportThorney06.doc
+INFO:Finished processing reports.
