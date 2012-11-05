@@ -261,13 +261,13 @@ viewer = (function() {
   }
 
   self._save_as = function(filename) {
-    var csv = [ 'Dig, Place, County, Label, Type, Latitude, Longitude', ];
+    var csv = [ 'Dig, Place, County, Label, Type, Latitude, Longitude, X, Y', ];
     var pits = self._source_test_pits();
     var corrs = self._source_correspondences();
     var proj = new OpenLayers.Projection("EPSG:4326");
     var idx, f, g;
 
-    var row = function(lng, lat, label, type) {
+    var row = function(lng, lat, label, type, x, y) {
       return [
         '"' + self._current_dig_name + '"',
         '"' + self._current_place.name + '"',
@@ -275,6 +275,7 @@ viewer = (function() {
         '"' + label + '"',
         '"' + type + '"',
         lat, lng,
+        x, y,
       ].join(',');
     }
 
@@ -282,14 +283,14 @@ viewer = (function() {
       f = pits[idx].attributes.other;
       g = f.geometry.clone();
       g.transform(self.base_map.getProjectionObject(), proj);
-      csv.push(row(g.x, g.y, f.attributes.label, 'PIT'));
+      csv.push(row(g.x, g.y, f.attributes.label, 'PIT', pits[idx].geometry.x, pits[idx].geometry.y));
     }
 
     for(idx in corrs) {
       f = corrs[idx].attributes.other;
       g = f.geometry.clone();
       g.transform(self.base_map.getProjectionObject(), proj);
-      csv.push(row(g.x, g.y, f.attributes.label, 'COR'));
+      csv.push(row(g.x, g.y, f.attributes.label, 'COR', corrs[idx].geometry.x, corrs[idx].geometry.y));
     }
 
     csv = csv.join("\n");
